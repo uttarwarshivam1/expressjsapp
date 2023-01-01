@@ -4,7 +4,7 @@ const path=require("path")
 app.get("/",(req,res)=>{
     res.send("hei i am alive")
 })
-app.get("/home",function(req,resp){
+app.get("/home",(req,resp)=>{
 
     resp.sendFile(path.join(__dirname,"./public/index.html"));
 })
